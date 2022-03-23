@@ -1,0 +1,15 @@
+.background-image {    
+    background-size: 100% 100%; 
+    filter: brightness(30%);
+    height: 100vh;
+}
+
+.main-column {
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .background-image {    
+        background-size: auto;        
+    }
+}

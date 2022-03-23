@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Uploading</title>
+  </head>
+  <body>
+	<h1>To Upload Product manually</h1>
+	<hr>
+	<div>
+	  <form action="/api/product" method="POST" enctype="multipart/form-data"> 
+		<div>
+            <label for="exhibit_name">Exhibit's Name</label>
+            <input 
+              type="text" 
+              placeholder="Exhibit's Name"
+              name="exhibit_name" 
+              required
+            />
+        </div> 
+        <div>
+            <label for="rank">Rank</label>
+            <input 
+              type="number"
+              name="rank" 
+              required
+            />
+        </div>
+	    <div>
+		  <label for="winners_name">Winner's Name</label>
+		  <input 
+		    type="text" 
+			placeholder="Winner's Name"
+			name="winners_name" 
+			required
+		  />
+	    </div>
+		<div>
+		  <label for="product_name">Product's Name</label>
+		  <input 
+		    name="product_name" 
+			placeholder="Product's Name" 
+			required>
+        </input>
+		</div>
+		<div>
+		  <label for="number_of_members">Number of members</label>
+		  <input 
+		    type="number"
+			name="number_of_members" 
+			required
+		  />
+		</div>
+        <div>
+          <label for="member_1">Member 1</label>
+          <input 
+            type="'text"
+            name="member_1"
+            required/>
+        </div>
+        <div>
+            <label for="member_2">Member 2</label>
+            <input 
+              type="'text"
+              name="member_2"
+            />
+          </div>
+          <div>
+            <label for="member_3">Member 3</label>
+            <input 
+              type="'text"
+              name="member_3"
+            />
+          </div>
+          <div>
+            <label for="member_4">Member 4</label>
+            <input 
+              type="'text"
+              name="member_4"
+            />
+          </div>
+          <div>
+            <label for="member_5">Member 5</label>
+            <input 
+              type="'text"
+              name="member_5"
+            />
+          </div>
+          <div>
+            <label for="member_6">Member 6</label>
+            <input 
+              type="'text"
+              name="member_6"
+            />
+          </div>
+          <div>
+            <label for="member_7">Member 7</label>
+            <input 
+              type="'text"
+              name="member_7"
+            />
+          </div>
+          <div>
+            <label for="intellectual_property">Intellectual Property</label>
+            <input
+              type="text"
+              name="intellectual_property"
+              placeholder="Intellectual Property"
+              required/>
+          </div>
+          <div>
+            <label for="social_impact">Social Impact</label>
+            <input
+              type="text"
+              name="social_impact"
+              placeholder="Social Impact"
+              required/>
+          </div>
+          <div>
+            <label for="output">Output</label>
+            <input
+              type="text"
+              name="output"
+              placeholder="Output"
+              required/>
+          </div>
+          <div>
+            <label for="mentors">Mentors</label>
+            <input
+              type="text"
+              name="mentors"
+              placeholder="Mentors"
+              required/>
+          </div>
+          <div>
+            <label for="faculty_in_charge">Faculty in charge</label>
+            <input
+              type="text"
+              name="faculty_in_charge"
+              placeholder="Faculty in charge"
+              required/>
+          </div>
+          <div>
+            <label for="campus">Campus</label>
+            <input
+              type="text"
+              name="campus"
+              placeholder="Campus"
+              required/>
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea
+              rows="4"
+              cols="50"
+              name="description"
+              placeholder="Description"
+              required></textarea>
+          </div>
+          <div>
+            <label for="statement_of_the_value_proposition">Statement of the Value Proposition</label>
+            <textarea
+              rows="4"
+              cols="50"
+              name="statement_of_the_value_proposition"
+              placeholder="Statement of the Value Proposition"
+              required></textarea>
+          </div>
+          <div>
+            <label for="images">Upload Images</label>
+            <input
+             type="file"
+             name="images"
+             accept="image/*"
+             multiple
+            />
+          </div>
+        
+		<div>
+		  <button type="submit">Submit</button>
+		</div>
+	  </form>
+	</div>
+  </body>
+
+</html>

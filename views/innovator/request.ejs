@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS BODY,HEADER, & FOOTER-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/product_request_page.css">
+    <link rel="stylesheet" type="text/css" href="./css/Navbar.css">
+    <!-- JS HEADER-->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class ="header-container-fluid">
+      <nav class = "navbar navbar-expand-lg navbar-dark">
+        <a href = "#"  class = "navbar-brand me-0">
+          <img 
+            src="img/nu-logo1.png" 
+            alt="NU Logo" 
+            width="150" 
+            height="45"
+            class="d-inline-block align-content-xl-start mx-3"
+          />
+        </a>                  
+        <ul class = "navbar-nav text-center ms-auto ">
+          <li>
+            <button class = "nav-link text-dark mx-3" href = "#">Sign Out</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="m-3 p-3 border-start border-5 border-primary">Product Request Form</div>
+      <div class="shadow p-3 pt-4 mt-5 bg-white rounded">
+        <form action="/api/pending_product/123innovator/321exhibit" method="post" enctype="multipart/form-data">               
+          <!--PRODUCTS NAME:-->
+          <label for="ProductsName" class="form-label">Products Name:</label>
+          <input type="text" class="form-control" id="ProductName" name="title">
+          <!--PRODUCTS Price:-->
+          <label for="ProductsName" class="form-label">Products Price:</label>
+          <input type="number" class="form-control" id="ProductName" name="price">
+          <!--PRODUCT DESCRIPTION-->
+          <label for="Description" class="form-label mt-2">Product Description:</label>
+          <textarea class="form-control" id="Description" rows="3" name="description"></textarea>
+          <br>
+          <!--CHOOSE FILE-->
+          <label for="exampleFormControlFile1"></label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image"><br>
+          <button type='submit'class = "req"><h6>Request</h6></button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

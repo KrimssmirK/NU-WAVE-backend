@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Amaranth&family=Open+Sans:wght@300;500&display=swap');
+
+body {
+    font-family: 'Alef';
+}
+
+/* HEADER CSS */
+.header-container-fluid {       
+    background-color: #17376E;   
+}
+
+.nav-link {
+    background-color: #FFB800;
+    color: #17376E;    
+    border: 0;
+    font-size: small;
+}
+
+
+/* TITLE CSS */
+.border-start {
+    color: #17376E;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+/* CONTAINER BOX CSS */
+
+.title-col h5 {
+   color:#17376E;
+}
+
+.title-col p {
+    font-size: 0.8em;
+ }
+
+.check-btn {
+    background-color: #17376E;       
+    border:0;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA BREAKPOINTS
+@media (max-width: 1980px) {
+    .main-container {
+        margin: 0;
+    }
+} */
+
+/* CONTAINER CSS */
+/* .box1 {
+    height: 15em;
+    width: 22em;
+    margin-left: 1.5em; 
+    margin-right: 1.5em;     
+}
+
+.vl {
+    border-right: #17376E 1px solid;
+    height: 9.5em;
+}
+
+.box1 img{
+    height: 7em;
+    width: 7em;   
+}
+
+.description-container {
+    color: #17376E;
+    margin-top: 2em;
+    margin-left: 0.7em;
+    font-weight:500;
+}
+
+.description-container p{
+    margin-top: 0.9em;   
+    font-size: 0.8em;
+}
+
+.check-button {
+    background-color: #17376E;
+    margin-top: 3.5em;
+    margin-left: 5em;
+    width: 5em;
+    border: 0;
+} */
