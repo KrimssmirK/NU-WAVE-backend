@@ -1,5 +1,6 @@
 const { Router } = require('express')
 const productController = require('../controllers/productController')
+
 const router = Router()
 const bodyParser = require('body-parser')
 router.use(bodyParser.urlencoded({ extended: false }))
@@ -10,6 +11,9 @@ router.post('/product', productController.upload.array('images'), productControl
 
 // product page
 router.get('/product/detail/:_id', productController.get_product_detail)
+/*
+curl http://localhost:3000/api/product/detail/23423fdsa23
+*/
 router.get('/product/images/:_id', productController.get_product_images)
 router.get('/product/ratings/guest/:_id', productController.check_if_the_guest_has_rated_the_product)
 router.post('/product/ratings/guest/:_id', productController.guest_rate_the_product)
@@ -20,7 +24,13 @@ router.post('/product/unlike/:_id', productController.push_unlike_button)
 
 
 // products page
-router.get('/products/:exhibit_name', productController.get_products)
+router.get('/products/:exhibitID', productController.get_products)
+/*
+
+curl http://localhost:3000/api/products/23423fdsa23
+curl http://localhost:3000/api/products
+
+*/
 router.get('/product/image/:_id', productController.get_product_main_image)
 
 
