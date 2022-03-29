@@ -84,7 +84,7 @@ const ProductSchema = new Schema({
     type: Number,
     default: 0,
   },
-  exhibit_name: {
+  exhibitID: {
     type: String,
     required: true
   },
