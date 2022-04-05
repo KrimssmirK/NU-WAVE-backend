@@ -38,6 +38,10 @@ router.get('/product/image/:_id', productController.get_product_main_image)
 router.post('/product/purchase/:_id', productController.purchase)
 
 
+// demonstration
+const sabaterUrl = '/sabater,'
+
+
 
 module.exports = router
 

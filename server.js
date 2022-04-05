@@ -5,6 +5,7 @@ const mongoose = require('mongoose')
 // routes
 const exhibitRoutes = require('./routes/exhibit')
 const productRoutes = require('./routes/product')
+const sabaterRoutes = require('./routes/sabater')
 
 const app = express()
 app.set("view engine", "ejs")
@@ -21,6 +22,7 @@ app.use('/', guestController.guest_visit_the_website)
 // API
 app.use('/api', exhibitRoutes)
 app.use('/api', productRoutes)
+app.use('/sabater', sabaterRoutes)
 
 // const local_DB_URI = 'mongodb://127.0.0.1:27017/centie'
 const local_DB_ATLAS = 'mongodb+srv://krimssmirk:t1uYuNFqKRlXhWmr@cluster0.21jlv.mongodb.net/centie?retryWrites=true&w=majority'
