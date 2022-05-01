@@ -32,6 +32,7 @@
     "mongoose": "^6.1.10",
     "mongoose-lean-getters": "^0.3.0",
     "multer": "^1.4.4",
+    "mysql": "^2.18.1",
     "nodemailer": "^6.7.2",
     "nodemailer-smtp-transport": "^2.7.4",
     "validator": "^13.5.2"

@@ -28,7 +28,7 @@ app.use('/sabater', sabaterRoutes)
 const local_DB_ATLAS = 'mongodb+srv://krimssmirk:t1uYuNFqKRlXhWmr@cluster0.21jlv.mongodb.net/centie?retryWrites=true&w=majority'
 const dbURI = process.env.MONGODB_URI || local_DB_ATLAS || local_DB_URI
 const port = process.env.PORT || 3000
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => app.listen(port, () => console.log(`Server running on port ${port}`)))
-  .catch((err) => console.log(err))
-
+// mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => app.listen(port, () => console.log(`Server running on port ${port}`)))
+//   .catch((err) => console.log(err))
+app.listen(port, () => console.log(`Server running on port ${port}`)) 
